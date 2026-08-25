@@ -1,0 +1,131 @@
+# TaskAccelerator Project .gitignore
+
+# =============================================================================
+# External Dependencies (Large repositories that shouldn't be tracked)
+# =============================================================================
+gem5-aladdin/
+task_accelerator_backup/
+
+# =============================================================================
+# Build Artifacts & Compiled Files
+# =============================================================================
+
+# Compiled executables from test programs
+simple_test
+register_test
+dma_test
+test_accelerator
+
+# Object files and libraries
+*.o
+*.so
+*.a
+*.lo
+*.la
+
+# gem5 build directory (contains all compiled gem5 artifacts)
+include/gem5/build/
+
+# gem5 accelerator files (copied from accelerator_files/ during build)
+include/gem5/src/task_accelerator/
+
+# Temporary build files
+include/gem5/.sconsign.dblite
+include/gem5/.scons*
+
+# =============================================================================
+# Python artifacts
+# =============================================================================
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py.class
+
+# =============================================================================
+# gem5 specific files
+# =============================================================================
+
+# gem5 simulation output directory
+m5out/
+
+# gem5 statistics and traces
+stats.txt
+config.dot
+config.ini
+*.trace*
+*.gz
+
+# gem5 checkpoint directories
+checkpoint*/
+cpt.*
+
+# =============================================================================
+# Development and IDE files
+# =============================================================================
+
+# Editor temporary files
+*~
+*.swp
+*.swo
+.*.swp
+.*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.user
+*.userprefs
+
+# =============================================================================
+# System files
+# =============================================================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# Testing and temporary files
+# =============================================================================
+
+# Test output files
+test_output/
+*.out
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# =============================================================================
+# Documentation build files
+# =============================================================================
+docs/_build/
+*.pdf
+
+# =============================================================================
+# What SHOULD be tracked (for reference - these are NOT ignored):
+# =============================================================================
+#
+# Source files (keep):
+# - accelerator_files/           (original accelerator source - MAIN DEVELOPMENT)
+# - *.c                          (test programs source)
+# - *.py                         (configuration scripts)
+# - Makefile                     (build configuration)
+# - README.md                    (documentation)
+# - .gitignore                   (this file)
+#
+# Note: include/gem5/src/task_accelerator/ is auto-generated from accelerator_files/
+#
+# =============================================================================
+build/
+driver/
+logs/
+old/
