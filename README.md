@@ -7,6 +7,7 @@
 <p align="center">
   <img alt="python" src="https://img.shields.io/badge/python-%E2%89%A5%203.8-blue">
   <img alt="gem5" src="https://img.shields.io/badge/gem5-v24-green">
+  <img alt="license" src="https://img.shields.io/badge/license-BSD--3--Clause-orange">
 </p>
 
 ---
@@ -54,3 +55,11 @@ sudo ./collect_metrics.sh <your-application>
 ```
 
 Then use those metrics to drive the task-offloading gem5 model in [`task_offloading/`](task_offloading/), or reproduce the real-hardware validation in [`case_study_task_off/`](case_study_task_off/).
+
+## License
+
+VIPER is released under the [BSD 3-Clause License](LICENSE).
+
+Note that `Data_trigger/` contains a modified copy of gem5, which carries its own
+BSD-style license from its upstream authors; those terms continue to apply to
+that code.
