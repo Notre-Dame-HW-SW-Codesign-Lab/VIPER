@@ -1,11 +1,3 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/viper-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="docs/assets/viper-light.png">
-    <img alt="VIPER" src="docs/assets/viper-light.png" width="300">
-  </picture>
-</p>
-
 <h1 align="center">VIPER</h1>
 
 <p align="center">
@@ -16,6 +8,14 @@
   <img alt="python" src="https://img.shields.io/badge/python-%E2%89%A5%203.8-blue">
   <img alt="gem5" src="https://img.shields.io/badge/gem5-v24-green">
   <img alt="license" src="https://img.shields.io/badge/license-BSD--3--Clause-orange">
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/viper-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/assets/viper-light.png">
+    <img alt="VIPER" src="docs/assets/viper-light.png" width="300">
+  </picture>
 </p>
 
 ---
