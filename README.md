@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/viper-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/assets/viper-light.png">
+    <img alt="VIPER" src="docs/assets/viper-light.png" width="300">
+  </picture>
+</p>
+
 <h1 align="center">VIPER</h1>
 
 <p align="center">
